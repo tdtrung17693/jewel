@@ -1,0 +1,11 @@
+{
+    "name": "Bejeweled"
+  , "version": "1.0.0"
+  , "description": "Bejeweled HTML, CSS3 and jQuery"
+  , "keywords": ["jewel games bejeweled puzzle"]
+  , "author": "TDT <trandinhtrung176@gmail.com>"
+  , "devDependencies": {
+    "grunt" : "0.4.4",
+    "grunt-contrib-watch" : "0.6.0"
+  }
+}

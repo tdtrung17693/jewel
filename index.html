@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Bejeweled</title>
+    <meta charset="UTF-8">
+    <meta name=description content="">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/fonts.css">
+    <style>
+      html {
+        height: 100%;
+        background: #313131 url(img/bg.png);
+      }
+      body {
+        background-color: transparent !important;
+      }
+      h1 {
+        color: #1b1b1b;
+        text-shadow: 1px 1px 0px #494949;
+        font-weight: 700;
+      }
+      .game {
+        background: #DDD;
+        overflow: hidden;
+        list-style-type: none;
+        padding: 0;
+        margin: 0 auto;
+        position: relative;
+        border-radius: 20px;
+        border: 10px solid #585858;
+      }
+      .gem {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        -webkit-transition: all .3s ease-out;
+      }
+      .gem span {
+        width: 100%;
+        height: 100%;
+        border-radius: 35%;
+        display: block;
+        box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5) inset;
+        border-left: 15px solid rgba(255, 255, 255, 0.3);
+        border-right: 15px solid rgba(94, 94, 94, 0.3);
+        border-top: 15px solid rgba(201, 190, 190, 0.3);
+        border-bottom: 15px solid rgba(49, 46, 46, 0.3);
+      }
+      .gem.active span{
+        -webkit-animation: pulse2 1s linear infinite 0s ;
+      }
+      .r span{
+        background-color: #c0392b;
+      }
+      .r.active span{
+        background-color: #e74c3c;
+      }
+      .g span{
+        background-color: #27ae60;
+      }
+      .g.active span{
+        background-color: #2ecc71;
+      }
+      .b span{
+        background-color: #2980b9;
+      }
+      .b.active span{
+        background-color: #3498db;
+      }
+      .w span{
+        background-color: #2c3e50;
+      }
+      .w.active span{
+        background-color: #34495e;
+      }
+      .p span{
+        background-color: #8e44ad;
+      }
+      .p.active span{
+        background-color: #9b59b6;
+      }
+      .y span{
+        background-color: #f39c12;
+      }
+      .y.active span{
+        background-color: #f1c40f;
+      }
+      @-webkit-keyframes pulse2 {
+       0% {
+         -webkit-transform: rotateY(0deg);
+       }
+       100% {
+         -webkit-transform: rotateY(360deg);
+       }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-center">BEJEWELED</h1>
+    <div class="wrapper">
+      <div class="main-game">
+
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>
